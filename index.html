@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-do List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+  <!-- comienzo de pag -->
+  <section class="welcome-page">
+  <div class="contenido-flex">
+  <div class="welcome-texto">
+  <h1 class="titulo-principal">TD!</h1>
+  <p> ¿Buscas una forma de guardar tus tareas? ¡Bienvenido a tu nueva página favorita! <br>
+  este To-do list está diseñado con el fin de ayudarte a planificar tus pendientes de una forma simple y práctica, donde cada tarea se guardará sin ningún problema. <br>
+  No importa cuantas veces cierres la pestaña, incluye sugerencias y modo oscuro. <br>
+  ¿Quieres probar? <br>
+  ¡Da click aquí!✨ 
+  </p>
+  <div class="button-start">
+  <a href="#tercer-titulo" class="start-button">Comenzar</a>
+  <div class="button-oscuro">
+  <button class="btn-oscuro">Modo oscuro</button>
+  </div>
+  </div>
+  </div>
+  <div class="imagen-logo">
+    <img src="assets/logo2.png" alt="logo de la pag" class="logo-td">
+  </section> 
+
+  <!-- otra info (ventajas)-->
+   <section class="ventajas-page">
+    <h1 class="segundo-titulo">¿Por qué TD?</h1>
+    <p class="segundo-parrafo">¡Simple! Como mencionamos anteriormente, tenemos<br>
+      ciertas ventajas que te serán de ayuda, por ejemplo:</p>
+    <ul class="ventajas-lista">
+      <li>✅ Organizar tus tareas fácilmente</li>
+      <li>✅ Guardar tu progreso automáticamente</li>
+      <li>✅ Activar el modo oscuro</li>
+      <li>✅ Completamente gratuito</li>
+      <li>✅ Sin necesidad de tener cuenta</li>
+    </ul>
+    <div class="start-dos">
+      <a href="#tercer-titulo" class="start-button">Comenzar</a>
+    </section>
+    <!-- tercer titulo-->
+   <section id="tercer-titulo">
+    <h1 class="tird-titulo">¡Comencemos!</h1>
+    <p class="tercer-parrafo">Dale click a agregar y que empiece la magia 🔮</p>
+   </section>
+  <!-- El primer boton es para que deje agregar con el modal (carta) de Bootstrap-->
+  <div class="botones-lista">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar</button>
+  <button id="buttonSugerencias" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalSugerencias">Sugerencias</button>
+  </div>
+  <!-- Modal botones -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <input type="text" id="guardoTitulo" placeholder="Titulo" class=titulito> <!-- Deja que el usuario ingrese el titulo manual-->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <textarea id="guardoDescripcion" placeholder="Descripcion" class="Description"></textarea> <!-- Que ingrese descp manual, textarea para que deje varias líneas -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" id="ButtonGuardar">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal de sugerencias -->
+<div class="modal fade" id="modalSugerencias" tabindex="-1" aria-labelledby="modalSugerenciasLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalSugerenciasLabel">Sugerencias de tareas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body" id="contenedorSugerencias">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- en donde estarán las tareas agregadas-->
+<ul id="listaTareas"></ul>
+
+
+<!--contador de tareas-->
+<p id="contadorTarea">Total de contador: 0</p>
+
+<!-- footer con social media-->
+  <footer id="main-footer1">
+    <p> Todos los derechos reservados © Zharick Prado </p>
+    <div id="main-footer2">
+      <p id="footer-text">¡Síguenos en nuestras redes!</p>
+      <div>
+      
+      <div id="social-icons">
+          <a href="https://instagram.com/13.10.044" target="_blank" aria-label="Instagram" id="instagram-icon">
+              <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://facebook.com/" target="_blank" aria-label="Facebook" id="facebook-icon">
+              <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a href="https://twitter.com/tu-pagina" target="_blank" aria-label="Twitter" id="twitter-icon">
+              <i class="fab fa-twitter"></i>
+          </a>
+      </div>
+      </div>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/dom.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

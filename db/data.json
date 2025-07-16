@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "titulo": "Tarea",
+        "descripcion": "Hacer la página 40, ejercicios 1 y 2 del libro",
+        "completed": false
+    },
+
+    {
+        "id": 2,
+        "titulo": "Reunión",
+        "descripcion": "Reunión del trabajo el día jueves",
+        "completed": false
+    },
+
+    {
+        "id": 3,
+        "titulo": "Salida",
+        "descripcion": "Ir a cine con amigos el sabado para ver la peli de Jurassic Park",
+        "completed": false
+    },
+
+    {
+        "id": 4,
+        "titulo": "Hacer ejercicio",
+        "descripcion": "Salir a correr por media hora",
+        "completed": false 
+    }
+]

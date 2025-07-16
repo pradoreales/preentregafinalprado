@@ -1,0 +1,401 @@
+.contenido-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 180px;
+    padding: 2rem;
+  }
+.welcome-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4b42b5;
+    padding: 50px 80px;
+    gap: 40px;
+    flex-wrap: wrap;
+    box-shadow: 0 10px 30px rgba(179, 47, 255, 0.363);
+  }
+  
+  .welcome-texto {
+    flex: 1;
+    color: white;
+    max-width: 600px;
+  }
+  
+  .titulo-principal {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .welcome-texto p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+  
+  .button-start {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .start-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #8ef5f5;
+    color: #4b42b5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: pulse 1.8s infinite;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+  }
+  
+  .imagen-logo {
+    flex-shrink: 0;
+    margin-left: -70px;
+  }
+  
+  .logo-td {
+    max-width: 1500px;
+    border-radius: 50px;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: aparecerLogo 1.5s ease-out forwards;
+  }
+
+  .btn-oscuro {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: white;
+    color: #4b452b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: pulse 1.8s infinite;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .btn-oscuro:hover {
+    background-color: #320468;
+    color: #ffffff;
+    transform: scale(1.05);
+  }
+
+  /* segunda parte estilos */
+  
+  .ventajas-page {
+    text-align: center;
+    padding: 10rem;
+    box-shadow: 0 10px 30px rgba(179, 47, 255, 0.24);
+  }
+  
+  .ventajas-lista {
+    list-style-position: inside;
+    list-style-type: none;
+    display: inline-block;
+    text-align: left;
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    padding-right: 194px;
+  }
+
+  .segundo-titulo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4b42b5;
+  }
+
+  .segundo-parrafo {
+    font-size: 1.7rem;
+  }
+
+  .start-two {
+    padding: 12px 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgb(125, 48, 250);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: pulse 1.8s infinite;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .start-dos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .start-two:hover {
+    transform: scale(1.05);
+    background-color: #8ef5f5;
+    color: rgb(125, 48, 250);
+  }
+
+/* estilo de las listas en js*/ 
+
+#listaTareas {
+  list-style: none;
+  padding: 0%;
+  max-width: 600px;
+  margin: 20px auto;
+  word-wrap: break-word;
+
+}
+
+.tarea-lista {
+  background-color: #554cb6f5;
+  padding: 15px;
+  margin-bottom: 15px;
+  flex-direction: colum;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.486);
+}
+
+.tarea-contenido span {
+  display: block;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #fcf5f5;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.tarea-contenido p {
+  color: #ddd;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.botones-tareas{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.botones-tareas button {
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.24);
+}
+
+.complete-boton { background-color: #dd33f3; color: #ffffff; }
+.delete-boton { background-color: #357ddc; color: white; }
+.edit-boton    { background-color: #49c2c2; color: rgb(255, 255, 255); }
+
+/* tercera sección estilos */
+
+#tercer-titulo {
+  text-align: center;
+  padding: 5rem;
+  padding-top: 9rem;
+  padding-bottom: 1rem;
+}
+
+.tird-titulo {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #4b42b5;
+}
+
+.tercer-parrafo {
+  font-size: 1.7rem;
+}
+
+/* tachado */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+}
+
+/* botones de agregar y sugerencias */
+
+.botones-lista {
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.btn.btn-primary {
+  padding: 12px 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(125, 48, 250);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  animation: pulse 1.8s infinite;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  margin-right: 16px;
+  margin-bottom: 30px;
+}
+
+.btn.btn-primary:hover {
+  transform: scale(1.05);
+  background-color: #8ef5f5;
+  color: rgb(125, 48, 250);
+} 
+
+.btn.btn-secondary {
+  padding: 12px 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #357ddc;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  animation: pulse 1.8s infinite;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.btn.btn-secondary:hover {
+  transform: scale(1.05);
+  background-color: #dd33f3;
+  color: #ffffff;
+}
+
+/* modal carta cuando se abre */
+.modal-content input,
+.modal-content textarea {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: #f3f3f3;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.btn.btn-agregar {
+  background-color: #5a4fcf;
+  color: #ffffff;
+}
+
+.btn.btn-agregar:hover {
+  background-color: #dd33f3;
+  color: #ffffff;
+}
+
+/*el contador */
+#contadorTarea {
+  justify-content: center;
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 15rem;
+}
+
+footer {
+  background-color:#4b42b5;
+  color:#ffffff;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 5rem;
+  box-shadow: 0 10px 30px rgba(179, 47, 255, 0.363);
+
+}
+
+/* estetica de social icons */
+
+#social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#social-icons a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+  transition: transform 0.3s ease, color 0.5s ease;
+}
+
+#social-icons a:hover {
+  color: rgb(89, 223, 233); 
+  transform: translateY(-5px); 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* modo día y oscuro */
+body.dark-mode {
+  background-color: rgb(22, 21, 21);
+  color: white;
+}
+
+body.dark-mode .welcome-page {
+  background-color: rgb(22, 21, 21);
+}
+
+body.dark-mode #main-footer1 {
+  background-color: rgb(22, 21, 21);
+}
+/* poquito responsive */
+@media (max-width: 768px) {
+    .welcome-page {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  
+    .button-start {
+      justify-content: center;
+    }
+
+    .start-dos {
+      justify-content: center;
+    }
+  
+    .logo-td {
+      margin-top: 20px;
+      
+    }
+    
+  }
+
+  @keyframes aparecerLogo {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
