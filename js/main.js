@@ -9,8 +9,10 @@ class Tareas {
     }
   }
   
-// Array para almacenar tareas
-   let tareas = JSON.parse(localStorage.getItem("tareas")) || [];
+// Array para almacenar tareas y quitar las undefined que quedaron viejas
+let tareas = (JSON.parse(localStorage.getItem("tareas")) || []).filter(tarea => {
+  return tarea && typeof tarea.titulo === "string" && typeof tarea.descripcion === "string";
+});
 
 // Guardar tareas en localStorage
  function guardarTareasEnLocal() {
